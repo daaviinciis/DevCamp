@@ -43,14 +43,24 @@ div {
 
 .gridFive {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     width: 500px;
     background-color: rgb(241, 241, 241);
+    padding: 10px;
+    gap: 10px;
+}
+
+.gridFive .firstChild p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .images {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .images img {
