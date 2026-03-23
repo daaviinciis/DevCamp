@@ -1,0 +1,4 @@
+.gridOne {
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr;
+}
