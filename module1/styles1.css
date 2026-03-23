@@ -2,3 +2,12 @@
     display: grid;
     grid-template-columns: 0.2fr 0.5fr;
 }
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.box1 { background-color: red; }
+.box2 { background-color: blue; }
+.box3 { background-color: yellow; }
