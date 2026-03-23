@@ -11,3 +11,28 @@
 .box1 { background-color: red; }
 .box2 { background-color: blue; }
 .box3 { background-color: yellow; }
+
+.gridThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 500px;
+    height: 300px;
+}
+
+.gridThree img {
+    width: 500px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.gridFour {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 500px;
+    background-color: green;
+}
+
+#nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
