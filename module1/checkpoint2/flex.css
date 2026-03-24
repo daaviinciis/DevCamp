@@ -17,3 +17,12 @@
 .flexOne .square {
   margin: 5px;
 }
+
+.flexTwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexTwo .square {
+  margin: 2px;
+}
