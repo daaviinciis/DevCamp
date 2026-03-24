@@ -98,6 +98,7 @@
   width: 500px;
   height: 400px;
   justify-content: space-between;
+  background-color: #eeeeee;
 }
 
 .flexSeven > div {
