@@ -29,8 +29,19 @@
 .flexThree {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 5px;
   align-items: flex-start;
+}
+
+.flexThree .square {
+  width: 100px;
+  height: 100px;
+  background-color: #73dab2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px;
 }
 
 .flexFour {
@@ -59,15 +70,27 @@
 
 .flexSix {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 500px;
   height: 400px;
+  background-color: #f1f1f1;
 }
-.flexSix > div {
+
+.flexSix .one {
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  margin-bottom: 10px;
+}
+
+.flexSix .two {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+  background-color: #d6d6d6;
+}
+
+.flexSix .three {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .flexSeven {
@@ -76,16 +99,27 @@
   height: 400px;
   justify-content: space-between;
 }
-.flexSeven .one,
-.flexSeven .two,
-.flexSeven .three,
-.flexSeven .four {
+
+.flexSeven > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
-.flexSeven .four .square {
-  background-color: #999999;
+
+.flexSeven .one {
+  justify-content: center;
+}
+
+.flexSeven .two {
+  justify-content: flex-end;
+}
+
+.flexSeven .three {
+  justify-content: flex-start;
+}
+
+.flexSeven .four {
+  justify-content: space-between;
 }
 
 .flexEight {
