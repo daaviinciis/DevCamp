@@ -2,8 +2,18 @@
     width: 100px;
     height: 100px;
     background-color: #73dab2;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex {
     margin: 10px;
+}
+
+.flexOne {
+  display: flex;
+}
+
+.flexOne .square {
+  margin: 5px;
 }
