@@ -3,6 +3,6 @@ num = 33
 lista = ["manzana", "banana", "cereza"]
 booleano = True
 
-primerElementoLista = lista[0]
+nuevoNumero = num + 10
 
-print (primerElementoLista);
+print (nuevoNumero);
