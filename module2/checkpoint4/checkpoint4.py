@@ -13,3 +13,6 @@ mi_diccionario = {
     "ciudad": "Donosti"
 }
 
+# Ejercicio 2: Round your float up.
+import math
+float_redondeado = math.ceil(mi_float)
