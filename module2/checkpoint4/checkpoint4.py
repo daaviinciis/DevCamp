@@ -16,3 +16,12 @@ mi_diccionario = {
 # Ejercicio 2: Round your float up.
 import math
 float_redondeado = math.ceil(mi_float)
+
+# Ejercicio 3: Get the square root of your float.
+raiz_cuadrada = math.sqrt(mi_float)
+
+# Ejercicio 4: Select the first element from your dictionary.
+primer_elemento_diccionario = list(mi_diccionario.items())[0]
+
+# Ejercicio 5: Select the second element from your tuple.
+segundo_elemento_tupla = mi_tupla[1]
