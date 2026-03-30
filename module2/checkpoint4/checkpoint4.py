@@ -25,3 +25,23 @@ primer_elemento_diccionario = list(mi_diccionario.items())[0]
 
 # Ejercicio 5: Select the second element from your tuple.
 segundo_elemento_tupla = mi_tupla[1]
+
+# Ejercicio 6: Add an element to the end of your list.
+mi_lista.append("naranja")
+
+# Ejercicio 7: Replace the first element in your list.
+mi_lista[0] = "pera"
+
+# Ejercicio 8: Sort your list alphabetically.
+mi_lista.sort()
+
+# Ejercicio 9: Use reassignment to add an element to your tuple.
+mi_tupla += ("amarillo",)
+
+# Mostrar resultados
+print("Lista:", mi_lista)
+print("Tupla:", mi_tupla)
+print("Float redondeado:", float_redondeado)
+print("Raíz cuadrada:", raiz_cuadrada)
+print("Primer elemento diccionario:", primer_elemento_diccionario)
+print("Segundo elemento tupla:", segundo_elemento_tupla)
