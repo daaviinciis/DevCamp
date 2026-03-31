@@ -1,4 +1,4 @@
-![][img/image0.png]**BOTTEGA UNIVERSITY**
+![btg][img/image0.png]**BOTTEGA UNIVERSITY**
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
@@ -18,13 +18,13 @@ En programación, los condicionales se usan para comprobar valores de variables,
 
 ## **Sintaxis en Python**
 
-![][img/image1.png]
+![img1][img/image1.png]
 
 **Ejemplo:**
 
-![][img/image2.png]
+![img2][img/image2.png]
 
-![][img/image3.png]
+![img3][img/image3.png]
 
 *En este caso, el programa comprueba la edad y muestra un mensaje dependiendo de si la condición edad \>= 18 es verdadera o falsa. Los condicionales también se pueden encadenar con elif para múltiples verificaciones.*
 
