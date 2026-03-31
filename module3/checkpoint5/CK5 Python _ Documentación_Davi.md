@@ -1,4 +1,4 @@
-![Bottega][img/image0.png width="200" height="100"]**BOTTEGA UNIVERSITY**
+![Bottega](img/image0.png width="200" height="100")**BOTTEGA UNIVERSITY**
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
@@ -18,13 +18,13 @@ En programación, los condicionales se usan para comprobar valores de variables,
 
 ## **Sintaxis en Python**
 
-![Sintaxis condicional 1][img/image1.png]
+![Sintaxis condicional 1](img/image1.png)
 
 **Ejemplo:**
 
-![Sintaxis condicional 2][img/image2.png]
+![Sintaxis condicional 2](img/image2.png)
 
-![Sintaxis condicional 3][img/image3.png]
+![Sintaxis condicional 3](img/image3.png)
 
 *En este caso, el programa comprueba la edad y muestra un mensaje dependiendo de si la condición edad \>= 18 es verdadera o falsa. Los condicionales también se pueden encadenar con elif para múltiples verificaciones.*
 
@@ -36,18 +36,18 @@ Los bucles son estructuras que permiten repetir un bloque de código varias vece
 
 Se usa cuando se conoce de antemano cuántas veces se quiere repetir algo o se necesita recorrer una colección de datos.
 
-![Bucle 1][img/image4.png]
+![Bucle 1](img/image4.png)
 
 **Explicación:**  
 *range(5) genera los números del 0 al 4 y el bucle imprime cada uno.*
 
-![Bucle 2][img/image5.png]
+![Bucle 2](img/image5.png)
 
 ## **Bucle while**
 
 Se usa cuando no se sabe exactamente cuántas veces se repetirá la acción, solo se pone una condición de continuación.
 
-![Bucle 3][img/image6.png]
+![Bucle 3](img/image6.png)
 
 **Explicación:**  
 *El bucle se ejecuta mientras la condición contador \< 5 sea verdadera.*
@@ -62,11 +62,11 @@ Se usan mucho en procesamiento de datos, automatización y para generar resultad
 
 ## **Sintaxis**
 
-![Lista 1][img/image7.png]
+![Lista 1](img/image7.png)
 
 **Ejemplo**
 
-![Lista 2][img/image8.png]
+![Lista 2](img/image8.png)
 
 **Explicación:**  
 *Cada elemento de la lista numeros se eleva al cuadrado y se guarda en la lista cuadrados.*
@@ -81,7 +81,7 @@ Existen distintos tipos de argumentos los posicionales, por defecto y keyword. L
 
 **Ejemplo**
 
-![Argumento][img/image9.png]
+![Argumento](img/image9.png)
 
 **Explicación:**  
 *"Daavii" es el argumento que se pasa a la función saludar. Esto permite reutilizar la misma función con diferentes nombres sin cambiar su código interno.*
@@ -92,11 +92,11 @@ Una función lambda es una función anónima de una sola línea que se utiliza p
 
 ## **Sintaxis**
 
-![Lambda 1][img/image10.png]
+![Lambda 1](img/image10.png)
 
 **Ejemplo**
 
-![Lambda 2][img/image11.png]
+![Lambda 2](img/image11.png)
 
 **Explicación:**  
 *Crea una función que suma dos números sin necesidad de definirla con def.*
@@ -109,7 +109,7 @@ pip básicamente es un gestor de paquetes de Python que permite instalar, actual
 
 Usar pip es fundamental para proyectos más grandes, ya que permite integrar librerías como requests para manejar peticiones HTTP, numpy para matemáticas avanzadas, pandas para análisis de datos y muchas más. Es recomendable trabajar siempre dentro de entornos virtuales (venv) para no afectar la instalación global de Python.
 
-![Pip][img/image12.png]
+![Pip](img/image12.png)
 
 **Ejemplo**
 
