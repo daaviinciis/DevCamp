@@ -29,17 +29,17 @@ Los condicionales son imprescindibles porque sin ellos todos los programas serí
 
   ## **Sintaxis en Python**
 
-![][img/image1_1.png]
+![img][img/image1_1.png]
 
 **Ejemplo 1: Edad mínima**
 
-![][img/image1_2.png]
+![img][img/image1_2.png]
 
 *En este caso, el programa comprueba la edad y muestra un mensaje dependiendo de si la condición edad \>= 18 es verdadera o falsa. Los condicionales también se pueden encadenar con elif para múltiples verificaciones.*
 
 **Ejemplo 2: Calificación de estudiantes**
 
-![][img/image1_3.png]
+![img][img/image1_3.png]
 
 En este caso, el programa evalúa la nota hasta que cumpla la condición. La primera condición como es verdadera detiene la evaluación de las demás.
 
