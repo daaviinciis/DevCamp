@@ -1,4 +1,5 @@
-![Bottega](img/image0.png)**BOTTEGA UNIVERSITY**
+![Bottega](img/image0.png)
+# **BOTTEGA UNIVERSITY**
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
