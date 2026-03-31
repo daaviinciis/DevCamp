@@ -1,6 +1,6 @@
 **BOTTEGA UNIVERSITY**
 
-![Bottega](img/image0_png)
+![Bottega](img/image0.png)
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
@@ -29,17 +29,17 @@ Los condicionales son imprescindibles porque sin ellos todos los programas serí
 
   ## **Sintaxis en Python**
 
-![](img/image1_1_png)
+![](img/image1_1.png)
 
 **Ejemplo 1: Edad mínima**
 
-![](img/image1_2_png)
+![](img/image1_2.png)
 
 *En este caso, el programa comprueba la edad y muestra un mensaje dependiendo de si la condición edad \>= 18 es verdadera o falsa. Los condicionales también se pueden encadenar con elif para múltiples verificaciones.*
 
 **Ejemplo 2: Calificación de estudiantes**
 
-![](img/image1_3_png)
+![](img/image1_3.png)
 
 En este caso, el programa evalúa la nota hasta que cumpla la condición. La primera condición como es verdadera detiene la evaluación de las demás.
 
@@ -73,16 +73,16 @@ Los bucles son la base de la automatización: permiten procesar grandes volúmen
 
 El bucle for se usa cuando conocemos de antemano el número de iteraciones, o cuando queremos recorrer una colección (lista, cadena, rango, diccionario, etc.). Python utiliza el concepto de iterables: cualquier objeto que se pueda recorrer elemento a elemento.
 
-![](img/image2_1_png)
+![](img/image2_1.png)
 
-![](img/image2_2_png)
+![](img/image2_2.png)
 
 **Explicación:**  
 *range(5) genera los números del 0 al 4 y el bucle imprime cada uno.*
 
 **Ejemplo 2: Recorrer lista de nombres**
 
-![](img/image2_3_png)
+![](img/image2_3.png)
 
 **Explicación:**  
 *Este comando recorre la lista de nombres e imprime una por una.*
@@ -91,14 +91,14 @@ El bucle for se usa cuando conocemos de antemano el número de iteraciones, o cu
 
 El bucle while repite un bloque de código mientras una condición sea verdadera. Se usa cuando no conocemos de antemano cuántas iteraciones serán necesarias: continuamos mientras se cumpla la condición y paramos cuando deja de cumplirse.
 
-![](img/image2_4_png)
+![](img/image2_4.png)
 
 **Explicación:**  
 *El bucle se ejecuta mientras la condición contador \< 5 sea verdadera.*
 
 **Ejemplo práctico 2: Solicitar entrada válida**
 
-![](img/image2_5_png)
+![](img/image2_5.png)
 
 **Explicación:**  
 *El bucle continuará pidiendo datos hasta que el usuario escriba "salir".*
@@ -157,11 +157,11 @@ Se usan mucho en procesamiento de datos, automatización y para generar resultad
 
 Supongamos que tenemos una lista de edades y queremos crear otra lista con solo las edades mayores a 18 años:
 
-![](img/image3_1_png)
+![](img/image3_1.png)
 
 **Ejemplo 2: Cuadrados de números**
 
-![](img/image3_2_png)
+![](img/image3_2.png)
 
 **Explicación:**  
 *Cada número de la lista números se eleva al cuadrado y se guarda en la nueva lista cuadrados.*
@@ -210,19 +210,19 @@ Por ejemplo, en lugar de crear una función específica para saludar a “Ana”
 
 **Posicionales:** Se pasan en el mismo orden en que los parámetros están definidos en la función. Son los más comunes y su posición es lo que determina a qué parámetro corresponde cada valor.
 
-![](img/image4_1_png)
+![](img/image4_1.png)
 
 **Por defecto:** Permiten asignar un valor predeterminado a un parámetro. Si al llamar la función no se proporciona ese argumento, se usa el valor por defecto. Esto hace la función más flexible y reduce la cantidad de argumentos obligatorios.
 
-![](img/image4_2_png)
+![](img/image4_2.png)
 
 **Keyword (nombrados):** Permiten pasar los argumentos en cualquier orden especificando el nombre del parámetro. Esto mejora enormemente la legibilidad del código, especialmente en funciones con muchos parámetros
 
-![](img/image4_3_png)
+![](img/image4_3.png)
 
 **Argumentos arbitrarios (\*args y \*\*kwargs):** permiten pasar múltiples valores sin definirlos previamente.
 
-![](img/image4_4_png)
+![](img/image4_4.png)
 
 ## **Buenas prácticas**
 
@@ -245,7 +245,7 @@ Las funciones lambda son muy útiles cuando se necesita una función temporal, p
 
 ## **Sintaxis**
 
-![](img/image5_1_png)
+![](img/image5_1.png)
 
 **argumentos:** los valores que la función recibirá.  
 **expresión:** la operación que se realiza con los argumentos. La función devuelve el resultado de esta expresión.
@@ -254,7 +254,7 @@ Una lambda solo puede contener una expresión (no instrucciones múltiples, no r
 
 **Ejemplo**
 
-![](img/image5_2_png)
+![](img/image5_2.png)
 
 **Explicación:**  
 *Crea una función que suma dos números sin necesidad de definirla con def.*
@@ -269,7 +269,7 @@ Se usan mucho en combinación con otras funciones como map(), filter() y reduce(
 
 ## **Usos comunes**
 
-![](img/image5_3_png)
+![](img/image5_3.png)
 
 ## **Lambda vs def — ¿Cuándo usar cada una?**
 
@@ -300,7 +300,7 @@ pip (Pip Installs Packages) básicamente es el gestor de paquetes oficial de Pyt
 
 Usar pip es fundamental para proyectos más grandes, ya que permite integrar librerías como requests para manejar peticiones HTTP, numpy para matemáticas avanzadas, pandas para análisis de datos y muchas más. Es recomendable trabajar siempre dentro de entornos virtuales (venv) para no afectar la instalación global de Python.
 
-![](img/image6_1_png)
+![](img/image6_1.png)
 
 **Ejemplo**
 
