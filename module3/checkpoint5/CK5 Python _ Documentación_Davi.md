@@ -1,4 +1,4 @@
-![btg][img/image0.png]**BOTTEGA UNIVERSITY**
+![btg][/img/image0.png]**BOTTEGA UNIVERSITY**
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
@@ -18,13 +18,13 @@ En programación, los condicionales se usan para comprobar valores de variables,
 
 ## **Sintaxis en Python**
 
-![img1][img/image1.png]
+![img1][./img/image1.png]
 
 **Ejemplo:**
 
-![img2][img/image2.png]
+![img2][./image2.png]
 
-![img3][img/image3.png]
+![img3][image3.png]
 
 *En este caso, el programa comprueba la edad y muestra un mensaje dependiendo de si la condición edad \>= 18 es verdadera o falsa. Los condicionales también se pueden encadenar con elif para múltiples verificaciones.*
 
@@ -36,7 +36,7 @@ Los bucles son estructuras que permiten repetir un bloque de código varias vece
 
 Se usa cuando se conoce de antemano cuántas veces se quiere repetir algo o se necesita recorrer una colección de datos.
 
-![][img/image4.png]
+![img4][image4]
 
 **Explicación:**  
 *range(5) genera los números del 0 al 4 y el bucle imprime cada uno.*
