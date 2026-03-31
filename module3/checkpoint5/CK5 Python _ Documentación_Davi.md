@@ -29,7 +29,7 @@ Los condicionales son imprescindibles porque sin ellos todos los programas serí
 
   ## **Sintaxis en Python**
 
-![img1][img/image1_1.png]
+![edad][img/image1_1.png]
 
 **Ejemplo 1: Edad mínima**
 
