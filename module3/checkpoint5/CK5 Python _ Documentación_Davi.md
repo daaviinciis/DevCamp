@@ -1,4 +1,4 @@
-![Bottega](img/image0.png width="200" height="100")**BOTTEGA UNIVERSITY**
+![Bottega](img/image0.png)**BOTTEGA UNIVERSITY**
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
