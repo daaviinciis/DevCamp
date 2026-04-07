@@ -1,4 +1,4 @@
-**BOTTEGA UNIVERSITY**![bottega university][img/image0.png]
+**BOTTEGA UNIVERSITY**![bottega university](img/image0.png)
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
@@ -61,13 +61,13 @@ Se utilizan por cuatro razones principales que conforman los pilares de la POO.
 
 Para definir una clase en Python se usa la palabra reservada class, seguida del nombre de la clase (recomendado en CamelCase, es decir, con la primera letra de cada palabra en mayúscula) y dos puntos. El contenido de la clase va identificado dentro del bloque.
 
-![][img/img1_1.png]
+![](img/img1.1.png)
 
 ## **Ejemplo**
 
 A continuación se muestra un ejemplo real de una clase Coche con sus atributos y métodos.
 
-![][image3]
+![](img/img1.2.png)
 
 | 💡 Buena práctica: Siempre nombra tus clases en CamelCase (Coche, GestorDeArchivos, BaseDeDatos) y tus métodos y atributos en snake\_case (mostrar\_info, velocidad\_maxima). Esto mejora la legibilidad y sigue las convenciones oficiales de Python (PEP 8). |
 | :---- |
@@ -89,13 +89,13 @@ Dentro de \_\_init\_\_ (y de cualquier método de instancia), el primer parámet
 
 ## **Sintaxis**
 
-![][image4]
+![](img/img2.1.png)
 
 ## 
 
 ## **Ejemplo: Clase Persona**
 
-![][image5]
+![](img/img2.2.png)
 
 | 📌 Recordatorio: El método \_\_init\_\_ NO crea el objeto (eso lo hace \_\_new\_\_, que Python gestiona internamente). \_\_init\_\_ simplemente inicializa el objeto ya creado, asignando sus atributos iniciales. Es el primer código que se ejecuta dentro del objeto. |
 | :---- |
@@ -111,19 +111,19 @@ Aunque HTTP tiene muchos verbos (GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS...
 
 El verbo GET se utiliza para recuperar información del servidor sin modificar nada. Es una operación de solo lectura, por lo que nunca altera los datos existentes, solo los solicita. Imagina que tienes tu Pokédex y quieres consultar los primeros cinco Pokémon disponibles. Al enviar una petición GET a la API de Pokémon, el servidor nos devuelve una lista con los nombres y enlaces de esos Pokémon en formato JSON. En Python, esto se hace con requests.get(url). Podemos comprobar si la solicitud fue exitosa revisando el código de estado respuesta.status\_code, que será 200 si todo ha ido bien. Luego, con respuesta.json() transformamos la información en un diccionario de Python, lo que nos permite recorrer la lista y mostrar los nombres de cada Pokémon en la consola. Esta operación es ideal para obtener datos existentes, como consultar información de usuarios, artículos o cualquier recurso que no necesitemos modificar.
 
-![][image6]
+![](img/img3.1.png)
 
 ## **2\. POST – Enviar / Crear datos**
 
 El verbo POST se utiliza para enviar datos al servidor y crear un nuevo recurso. Siguiendo con el ejemplo de Pokémon, supongamos que queremos agregar un nuevo Pokémon llamado “Pikachu” a nuestra colección virtual. Para ello, definimos un diccionario con toda la información relevante del Pokémon, como su tipo y nivel, y enviamos esos datos al servidor usando requests.post(url, json=datos). En este caso, los datos se envían en el cuerpo de la petición, en formato JSON, y el servidor los procesa para crear el recurso. Si todo sale bien, nos devuelve un código de estado 201, que indica que el recurso se creó correctamente, junto con la información del Pokémon recién agregado. Esto es muy similar a rellenar un formulario de registro en una web: estamos enviando información que el servidor almacenará y pondrá a disposición para futuras consultas.
 
-![][image7]
+![](img/img3.2.png)
 
 ## **3\. DELETE – Eliminar datos**
 
 El verbo DELETE se utiliza para eliminar un recurso existente en el servidor. Por ejemplo, si queremos borrar un Pokémon concreto de nuestra colección, enviamos una petición DELETE a la URL correspondiente con su identificador. El servidor recibe la solicitud y elimina el recurso indicado. Si la operación tiene éxito, devuelve un código de estado 204, que significa que la eliminación se realizó correctamente, mientras que un 404 indicaría que el recurso no se encontró. Este verbo se debe usar con precaución, ya que la eliminación suele ser irreversible y no siempre existe un mecanismo de recuperación.
 
-![][image8]
+![](img/img3.3.png)
 
 | ⚠️ IMPORTANTE: Esto es un código de ejemplo para simular. |
 | :---- |
@@ -158,7 +158,7 @@ Existen varios tipos de bases de datos NoSQL, orientadas a documentos (MongoDB, 
 
 En MongoDB, un registro de usuario se almacenaría así en formato JSON/BSON.
 
-![][image9]
+![](img/img4.1.png)
 
 | 🔍 ¿Cuándo usar MongoDB? MongoDB es ideal cuando los datos no tienen una estructura fija (por ejemplo, formularios con campos opcionales), cuando necesitas escalar horizontalmente, cuando trabajas con datos jerárquicos o anidados, o cuando tu aplicación requiere alta velocidad de lectura/escritura. No es la mejor opción cuando necesitas transacciones complejas o relaciones muy estrictas entre datos. |
 | :---- |
@@ -205,7 +205,7 @@ Otro criterio para clasificar las APIs es cómo están diseñadas y cómo se com
 
 ## **Ejemplo: Consumir una API con Python**
 
-![][image10]
+![](img/img5.1.png)
 
 # **6\. ¿QUÉ ES POSTMAN?** {#6.-¿qué-es-postman?}
 
@@ -272,19 +272,19 @@ Con el polimorfismo, podemos tratar todos los objetos de forma uniforme y dejar 
 
 ## **Ejemplo sin polimorfismo (código rígido)**
 
-![][image11]
+![](img/img7.1.png)
 
 ## 
 
 ## **Ejemplo CON polimorfismo (código flexible)**
 
-![][image12]
+![](img/img7.2.png)
 
 ## **Polimorfismo con funciones built-in**
 
 Python también implementa polimorfismo en sus funciones integradas. Por ejemplo, la función len() funciona con strings, listas, diccionarios y tuplas; el operador \+ suma números pero concatena strings; print() puede mostrar cualquier tipo de objeto. Esto es polimorfismo en acción a nivel del propio lenguaje.
 
-![][image13]
+![](img/img7.3.png)
 
 # **8\.  ¿QUÉ ES UN MÉTODO DUNDER?** {#8.-¿qué-es-un-método-dunder?}
 
@@ -304,7 +304,7 @@ Esto es lo que los programadores llaman 'protocolo de Python': un conjunto de m�
 
 Ya lo vimos en la sección 2, pero es el dunder por excelencia: el constructor. Se ejecuta automáticamente cuando se crea una instancia de la clase y sirve para inicializar los atributos del objeto. Es el punto de entrada de todo objeto en Python.
 
-![][img/img8.1.png]
+![](img/img8.1.png)
 
 ## 
 
@@ -315,29 +315,29 @@ Cuando hacemos ***print(mi\_objeto)*** sin definir nada, Python muestra algo com
 * ***\_\_str\_\_*** define la representación amigable para el usuario, usada por ***print()***.  
 * ***\_\_repr\_\_*** define la representación técnica para el desarrollador, útil para depuración y logs.
 
-![][img/img8.2.png]
+![](img/img8.2.png)
 
 ## **\_\_len\_\_: definir la longitud del objeto**
 
 Este método permite que tu objeto responda a la función len(), devolviendo siempre un número entero no negativo. Es muy útil para colecciones personalizadas.
 
-![][img/img8.3.png]
+![](img/img8.3.png)
 
 ## **Sobrecarga de operadores: \_\_add\_\_, \_\_eq\_\_, \_\_lt\_\_**
 
 Estos métodos permiten que los operadores matemáticos y de comparación funcionen con tus objetos, algo llamado sobrecarga de operadores:
 
-![][img/img8.4.png]
+![](img/img8.4.png)
 
 ## **Acceso e inclusión: \_\_getitem\_\_ y \_\_contains\_\_**
 
 Con \_\_getitem\_\_ tu objeto puede soportar acceso por índice (obj\[i\]), y con \_\_contains\_\_ puede responder al operador in (elemento in objeto). Esto permite crear colecciones personalizadas muy flexibles.
 
-![][img/img8.5.png]
+![](img/img8.5.png)
 
 ## **Ejemplo integrador: clase con múltiples dunders**
 
-![][img/img8.6.png]
+![](img/img8.6.png)
 
 | 💡 Consejo clave: No es necesario implementar todos los métodos dunder en cada clase. Solo define aquellos que tengan sentido para tu objeto. Si tu clase representa una colección, implementa *\_\_len\_\_*, *\_\_getitem\_\_* y *\_\_contains\_\_*. Si quieres que sea legible para el usuario, implementa *\_\_str\_\_*. Si necesitas sumar objetos, implementa *\_\_add\_\_*. Python es flexible: implementa lo que tu clase realmente necesite. |
 | :---- |
@@ -361,23 +361,23 @@ Para entender los decoradores, es fundamental comprender que en Python las funci
 
 La sintaxis con el símbolo @ antes de una función es azúcar sintáctica (syntactic sugar): una forma abreviada de escribir algo que Python traduce internamente a una llamada de función. Estas dos formas son equivalentes.
 
-![][img/img9.1.png]
+![](img/img9.1.png)
 
 ## 
 
 ## **Cómo crear un decorador paso a paso**
 
-![][img/img9.2.png]
+![](img/img9.2.png)
 
 ## **Ejemplo real: Decorador de tiempo de ejecución**
 
-![][img/img9.3.png]
+![](img/img9.3.png)
 
 ## **Decoradores incorporados en Python**
 
 Python incluye decoradores built-in muy utilizados en programación orientada a objetos.
 
-![][img/img9.4.png]
+![](img/img9.4.png)
 
 | ⚡ Consejo avanzado: Cuando crees tus propios decoradores, usa functools.wraps para preservar el nombre y la documentación de la función original. Sin él, la función decorada perdería su identidad (\_\_name\_\_, \_\_doc\_\_). Añade 'from functools import wraps' y decora la función interna con '@wraps(funcion\_original)'. |
 | :---- |
