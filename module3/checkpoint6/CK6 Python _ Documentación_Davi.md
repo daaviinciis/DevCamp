@@ -6,7 +6,7 @@
 
 ## **ÍNDICE**
 
-[**INTRODUCCIÓN	3**](#introducción)
+[**INTRODUCCIÓN**](#introducción)
 
 [**1\. ¿PARA QUÉ USAMOS CLASES EN PYTHON?	4**](#1.-¿para-qué-usamos-clases-en-python?)
 
