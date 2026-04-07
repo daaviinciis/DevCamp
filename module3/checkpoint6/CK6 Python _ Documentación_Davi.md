@@ -1,4 +1,4 @@
-**BOTTEGA UNIVERSITY**![][image0.png]
+**BOTTEGA UNIVERSITY**![bottega university][img/image0.png]
 
 # **DOCUMENTACIÓN DE PYTHON PARA PRINCIPIANTES**
 
@@ -61,7 +61,7 @@ Se utilizan por cuatro razones principales que conforman los pilares de la POO.
 
 Para definir una clase en Python se usa la palabra reservada class, seguida del nombre de la clase (recomendado en CamelCase, es decir, con la primera letra de cada palabra en mayúscula) y dos puntos. El contenido de la clase va identificado dentro del bloque.
 
-![][image2]
+![][img/img1_1.png]
 
 ## **Ejemplo**
 
