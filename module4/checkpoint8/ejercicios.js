@@ -1,0 +1,1 @@
+let miLista = ["velma", "exploradora", "jane", "john", "harry"];
