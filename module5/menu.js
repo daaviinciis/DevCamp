@@ -24,20 +24,6 @@ for (let i = 0; i < sides.length; i++) {
   console.log(`${i + 1}. ${sides[i].nombre} - $${sides[i].precio}`);
 }
 
-// COMENTARIOS
-const comentarios = [
-  "¡Muy buena elección!",
-  "Eso es un clásico de la cocina vasca.",
-  "Te va a encantar, es una especialidad de la casa.",
-  "Excelente elección, muy tradicional.",
-  "Ese plato es muy popular aquí."
-];
-
-function comentarioCamarera() {
-  const indice = Math.floor(Math.random() * comentarios.length);
-  return comentarios[indice];
-}
-
 // SIMULACIÓN
 let platoElegido = menuCena[0];
 let side1 = sides[0];
@@ -51,6 +37,20 @@ let pedido = [
   side1,
   side2
 ];
+
+// COMENTARIOS
+const comentarios = [
+  "¡Muy buena elección!",
+  "Eso es un clásico de la cocina vasca.",
+  "Te va a encantar, es una especialidad de la casa.",
+  "Excelente elección, muy tradicional.",
+  "Ese plato es muy popular aquí."
+];
+
+function comentarioCamarera() {
+  const indice = Math.floor(Math.random() * comentarios.length);
+  return comentarios[indice];
+}
 
 console.log("\n=== TU PEDIDO ===");
 
