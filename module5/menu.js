@@ -15,36 +15,27 @@ const sidesMenu = [
 console.log("=== MENÚ CENA ===");
 
 for (let i = 0; i < menuCena.length; i++) {
-  console.log(`${i + 1}. ${menuCena[i].nombre} - $${menuCena[i].precio}`);
+  console.log(`${i + 1}. ${menuCena[i].name} - $${menuCena[i].price}`);
 }
 
 console.log("\n=== ACOMPAÑAMIENTOS ===");
 
-for (let i = 0; i < sides.length; i++) {
-  console.log(`${i + 1}. ${sides[i].nombre} - $${sides[i].precio}`);
+for (let i = 0; i < sidesMenu.length; i++) {
+  console.log(`${i + 1}. ${sidesMenu[i].name} - $${sidesMenu[i].price}`);
 }
 
 // SIMULACIÓN
 let platoElegido = menuCena[0];
-let side1 = sides[0];
-let side2 = sides[1];
-
-// RESUMEN DEL PEDIDO
-let total = 0;
-
-let pedido = [
-  platoElegido,
-  side1,
-  side2
-];
+let side1 = sidesMenu[0];
+let side2 = sidesMenu[1];
 
 // COMENTARIOS
 const comentarios = [
   "¡Muy buena elección!",
-  "Eso es un clásico de la cocina vasca.",
-  "Te va a encantar, es una especialidad de la casa.",
-  "Excelente elección, muy tradicional.",
-  "Ese plato es muy popular aquí."
+  "Eso es un clásico de la cocina.",
+  "Te va a encantar.",
+  "Excelente elección.",
+  "Muy popular en el restaurante."
 ];
 
 function comentarioCamarera() {
@@ -52,13 +43,18 @@ function comentarioCamarera() {
   return comentarios[indice];
 }
 
+// PEDIDO
+let pedido = [platoElegido, side1, side2];
+
+let total = 0;
+
 console.log("\n=== TU PEDIDO ===");
 
 for (let i = 0; i < pedido.length; i++) {
   console.log(
-    `${pedido[i].nombre} - $${pedido[i].precio} | ${comentarioAleatorio()}`
+    `${pedido[i].name} - $${pedido[i].price} | ${comentarioCamarera()}`
   );
-  total += pedido[i].precio;
+  total += pedido[i].price;
 }
 
 // TOTAL
