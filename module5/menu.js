@@ -1,33 +1,46 @@
 // MENU
-const menuCena = [
-  { name: "Hamburguesa", price: 12 },
-  { name: "Ensalada", price: 10 },
-  { name: "Pollo", price: 11 }
-];
+const menu = {
+  breakfast: [
+    { name: "Tostadas", price: 5 },
+    { name: "Huevos revueltos", price: 6 },
+    { name: "Pancakes", price: 7 }
+  ],
+  lunch: [
+    { name: "Hamburguesa", price: 10 },
+    { name: "Ensalada", price: 8 },
+    { name: "Pollo", price: 9 }
+  ],
+  dinner: [
+    { name: "Hamburguesa", price: 12 },
+    { name: "Ensalada", price: 10 },
+    { name: "Pollo", price: 11 }
+  ]
+};
 
 const sidesMenu = [
   { name: "Patatas fritas", price: 4 },
-  { name: "Ensalada pequeña", price: 5 },
-  { name: "Sopa", price: 3 }
+  { name: "Sopa", price: 3 },
+  { name: "Ensalada pequeña", price: 5 }
 ];
 
 // MOSTRAR MENU
-console.log("=== MENÚ CENA ===");
+let timeOfDay = "dinner";
 
-for (let i = 0; i < menuCena.length; i++) {
-  console.log(`${i + 1}. ${menuCena[i].name} - $${menuCena[i].price}`);
+console.log(`\n=== MENÚ ${timeOfDay.toUpperCase()} ===`);
+
+for (let i = 0; i < menu[timeOfDay].length; i++) {
+  console.log(
+    `${i + 1}. ${menu[timeOfDay][i].name} - $${menu[timeOfDay][i].price}`
+  );
 }
 
 console.log("\n=== ACOMPAÑAMIENTOS ===");
 
 for (let i = 0; i < sidesMenu.length; i++) {
-  console.log(`${i + 1}. ${sidesMenu[i].name} - $${sidesMenu[i].price}`);
+  console.log(
+    `${i + 1}. ${sidesMenu[i].name} - $${sidesMenu[i].price}`
+  );
 }
-
-// SIMULACIÓN
-let platoElegido = menuCena[0];
-let side1 = sidesMenu[0];
-let side2 = sidesMenu[1];
 
 // COMENTARIOS
 const comentarios = [
@@ -43,9 +56,35 @@ function comentarioCamarera() {
   return comentarios[indice];
 }
 
-// PEDIDO
-let pedido = [platoElegido, side1, side2];
+function personalizar(item, extra) {
+  if (extra === "queso") {
+    item.price += 2;
+    item.name += " + queso";
+  }
 
+  if (extra === "picante") {
+    item.price += 1;
+    item.name += " + picante";
+  }
+
+  if (extra === "doble") {
+    item.price += 3;
+    item.name += " (doble porción)";
+  }
+
+  return item;
+}
+
+// SIMULACIÓN PEDIDO
+let platoPrincipal = menu[timeOfDay][0];
+let side1 = sidesMenu[0];
+let side2 = sidesMenu[1];
+
+platoPrincipal = personalizar(platoPrincipal, "queso");
+
+let pedido = [platoPrincipal, side1, side2];
+
+// MOSTRAR PEDIDO
 let total = 0;
 
 console.log("\n=== TU PEDIDO ===");
