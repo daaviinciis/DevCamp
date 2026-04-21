@@ -1,100 +1,109 @@
-// MENU
-const menu = {
-  breakfast: [
-    { name: "Tostadas", price: 5 },
-    { name: "Huevos revueltos", price: 6 },
-    { name: "Pancakes", price: 7 }
-  ],
-  lunch: [
-    { name: "Hamburguesa", price: 10 },
-    { name: "Ensalada", price: 8 },
-    { name: "Pollo", price: 9 }
-  ],
-  dinner: [
-    { name: "Hamburguesa", price: 12 },
-    { name: "Ensalada", price: 10 },
-    { name: "Pollo", price: 11 }
-  ]
-};
-
-const sidesMenu = [
-  { name: "Patatas fritas", price: 4 },
-  { name: "Sopa", price: 3 },
-  { name: "Ensalada pequeña", price: 5 }
+// Menu
+const menuPrincipal = [
+  { name: "Hamburguesa", price: 12 },
+  { name: "Ensalada", price: 10 },
+  { name: "Pollo", price: 11 }
 ];
 
-// MOSTRAR MENU
-let timeOfDay = "dinner";
+const segundos = [
+  { name: "Pizza", price: 9 },
+  { name: "Pasta", price: 8 },
+  { name: "Sushi", price: 13 }
+];
 
-console.log(`\n=== MENÚ ${timeOfDay.toUpperCase()} ===`);
+const postres = [
+  { name: "Tarta", price: 5 },
+  { name: "Helado", price: 4 },
+  { name: "Brownie", price: 6 }
+];
 
-for (let i = 0; i < menu[timeOfDay].length; i++) {
-  console.log(
-    `${i + 1}. ${menu[timeOfDay][i].name} - $${menu[timeOfDay][i].price}`
-  );
-}
-
-console.log("\n=== ACOMPAÑAMIENTOS ===");
-
-for (let i = 0; i < sidesMenu.length; i++) {
-  console.log(
-    `${i + 1}. ${sidesMenu[i].name} - $${sidesMenu[i].price}`
-  );
-}
-
-// COMENTARIOS
+// Comentarios
 const comentarios = [
-  "¡Muy buena elección!",
-  "Eso es un clásico de la cocina.",
-  "Te va a encantar.",
-  "Excelente elección.",
-  "Muy popular en el restaurante."
+  "¡Buena elección!",
+  "Eso es delicioso.",
+  "Excelente decisión.",
+  "Muy popular en el restaurante.",
+  "Te va a encantar."
 ];
 
-function comentarioCamarera() {
-  const indice = Math.floor(Math.random() * comentarios.length);
-  return comentarios[indice];
+function comentarioAleatorio() {
+  return comentarios[Math.floor(Math.random() * comentarios.length)];
 }
 
-function personalizar(item, extra) {
-  if (extra === "queso") {
-    item.price += 2;
-    item.name += " + queso";
-  }
-
-  if (extra === "picante") {
-    item.price += 1;
-    item.name += " + picante";
-  }
-
-  if (extra === "doble") {
-    item.price += 3;
-    item.name += " (doble porción)";
-  }
-
-  return item;
-}
-
-// SIMULACIÓN PEDIDO
-let platoPrincipal = menu[timeOfDay][0];
-let side1 = sidesMenu[0];
-let side2 = sidesMenu[1];
-
-platoPrincipal = personalizar(platoPrincipal, "queso");
-
-let pedido = [platoPrincipal, side1, side2];
-
-// MOSTRAR PEDIDO
-let total = 0;
-
-console.log("\n=== TU PEDIDO ===");
-
-for (let i = 0; i < pedido.length; i++) {
-  console.log(
-    `${pedido[i].name} - $${pedido[i].price} | ${comentarioCamarera()}`
+// Buscar plato ignorando mayúsculas y minúsculas
+function buscarPlatoPorNombre(lista, nombre) {
+  return lista.find(
+    item => item.name.toLowerCase() === nombre.toLowerCase()
   );
-  total += pedido[i].price;
 }
 
-// TOTAL
-console.log("\nTOTAL A PAGAR: $" + total);
+// Inicio
+alert("Bienvenido/a al Bottega Diner");
+
+// Plato principal
+let textoPrincipal = menuPrincipal
+  .map(p => `${p.name} - $${p.price}`)
+  .join("\n");
+
+let plato1 = null;
+
+while (!plato1) {
+  let input1 = prompt("Elige el plato principal:\n\n" + textoPrincipal);
+
+  plato1 = buscarPlatoPorNombre(menuPrincipal, input1);
+
+  if (!plato1) {
+    alert("Ese plato no existe, elige otra vez");
+  }
+}
+
+alert(comentarioAleatorio());
+
+// Segundo plato
+let textoSegundo = segundos
+  .map(p => `${p.name} - $${p.price}`)
+  .join("\n");
+
+let plato2 = null;
+
+while (!plato2) {
+  let input2 = prompt("Elige el segundo plato:\n\n" + textoSegundo);
+
+  plato2 = buscarPlatoPorNombre(segundos, input2);
+
+  if (!plato2) {
+    alert("Ese plato no existe, elige otra vez");
+  }
+}
+
+alert(comentarioAleatorio());
+
+// Postre
+let textoPostre = postres
+  .map(p => `${p.name} - $${p.price}`)
+  .join("\n");
+
+let postre = null;
+
+while (!postre) {
+  let input3 = prompt("Elige el postre:\n\n" + textoPostre);
+
+  postre = buscarPlatoPorNombre(postres, input3);
+
+  if (!postre) {
+    alert("Ese plato no existe, elige otra vez");
+  }
+}
+
+alert(comentarioAleatorio());
+
+// Total del pedido
+let total = plato1.price + plato2.price + postre.price;
+
+alert(
+  "TU PEDIDO:\n\n" +
+  "Plato principal: " + plato1.name + " - $" + plato1.price + "\n" +
+  "Segundo plato: " + plato2.name + " - $" + plato2.price + "\n" +
+  "Postre: " + postre.name + " - $" + postre.price + "\n\n" +
+  "TOTAL: $" + total
+);
