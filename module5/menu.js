@@ -37,73 +37,82 @@ function buscarPlatoPorNombre(lista, nombre) {
   );
 }
 
-// Inicio
-alert("Bienvenido/a al Bottega Diner");
+// Función
+function hacerPedido() {
 
-// Plato principal
-let textoPrincipal = menuPrincipal
-  .map(p => `${p.name} - $${p.price}`)
-  .join("\n");
+  alert("Bienvenido/a al Bottega Diner");
 
-let plato1 = null;
+  // Plato principal
+  let textoPrincipal = menuPrincipal
+    .map(p => `${p.name} - $${p.price}`)
+    .join("\n");
 
-while (!plato1) {
-  let input1 = prompt("Elige el plato principal:\n\n" + textoPrincipal);
+  let plato1 = null;
 
-  plato1 = buscarPlatoPorNombre(menuPrincipal, input1);
+  while (!plato1) {
+    let input1 = prompt("Elige el plato principal:\n\n" + textoPrincipal);
 
-  if (!plato1) {
-    alert("Ese plato no existe, elige otra vez");
+    if (input1 === null) return;
+
+    plato1 = buscarPlatoPorNombre(menuPrincipal, input1);
+
+    if (!plato1) {
+      alert("Ese plato no existe, elige otra vez");
+    }
   }
-}
 
-alert(comentarioAleatorio());
+  alert(comentarioAleatorio());
 
-// Segundo plato
-let textoSegundo = segundos
-  .map(p => `${p.name} - $${p.price}`)
-  .join("\n");
+  // Segundo plato
+  let textoSegundo = segundos
+    .map(p => `${p.name} - $${p.price}`)
+    .join("\n");
 
-let plato2 = null;
+  let plato2 = null;
 
-while (!plato2) {
-  let input2 = prompt("Elige el segundo plato:\n\n" + textoSegundo);
+  while (!plato2) {
+    let input2 = prompt("Elige el segundo plato:\n\n" + textoSegundo);
 
-  plato2 = buscarPlatoPorNombre(segundos, input2);
+    if (input2 === null) return;
 
-  if (!plato2) {
-    alert("Ese plato no existe, elige otra vez");
+    plato2 = buscarPlatoPorNombre(segundos, input2);
+
+    if (!plato2) {
+      alert("Ese plato no existe, elige otra vez");
+    }
   }
-}
 
-alert(comentarioAleatorio());
+  alert(comentarioAleatorio());
 
-// Postre
-let textoPostre = postres
-  .map(p => `${p.name} - $${p.price}`)
-  .join("\n");
+  // Postre
+  let textoPostre = postres
+    .map(p => `${p.name} - $${p.price}`)
+    .join("\n");
 
-let postre = null;
+  let postre = null;
 
-while (!postre) {
-  let input3 = prompt("Elige el postre:\n\n" + textoPostre);
+  while (!postre) {
+    let input3 = prompt("Elige el postre:\n\n" + textoPostre);
 
-  postre = buscarPlatoPorNombre(postres, input3);
+    if (input3 === null) return;
 
-  if (!postre) {
-    alert("Ese plato no existe, elige otra vez");
+    postre = buscarPlatoPorNombre(postres, input3);
+
+    if (!postre) {
+      alert("Ese plato no existe, elige otra vez");
+    }
   }
+
+  alert(comentarioAleatorio());
+
+  // Total
+  let total = plato1.price + plato2.price + postre.price;
+
+  alert(
+    "TU PEDIDO:\n\n" +
+    "Plato principal: " + plato1.name + " - $" + plato1.price + "\n" +
+    "Segundo plato: " + plato2.name + " - $" + plato2.price + "\n" +
+    "Postre: " + postre.name + " - $" + postre.price + "\n\n" +
+    "TOTAL: $" + total
+  );
 }
-
-alert(comentarioAleatorio());
-
-// Total del pedido
-let total = plato1.price + plato2.price + postre.price;
-
-alert(
-  "TU PEDIDO:\n\n" +
-  "Plato principal: " + plato1.name + " - $" + plato1.price + "\n" +
-  "Segundo plato: " + plato2.name + " - $" + plato2.price + "\n" +
-  "Postre: " + postre.name + " - $" + postre.price + "\n\n" +
-  "TOTAL: $" + total
-);
